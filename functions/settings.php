@@ -14,7 +14,7 @@ if ( ! function_exists('dwp_get_settings')) {
       ),
       "dwp_redirect_status_code" => array(
         'option_group' => 'dwp_settings_group',
-        'default_value' => '308'
+        'default_value' => '307'
       ),
     );
   }
