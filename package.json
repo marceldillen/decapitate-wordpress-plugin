@@ -1,0 +1,14 @@
+{
+  "name": "decapitate-wordpress-plugin",
+  "version": "1.0.0",
+  "description": "Decapitate your Wordpress installation",
+  "main": "index.js",
+  "repository": "https://github.com/marceldillen/wordpress-decapitation-plugin.git",
+  "author": "Marcel Dillen <marceldillen@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
