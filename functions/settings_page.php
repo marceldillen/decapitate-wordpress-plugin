@@ -36,9 +36,3 @@ if ( ! function_exists('dwp_sanitize_checkbox')) {
     return ($input) ? '1' : '0';
   }
 }
-
-if ( ! function_exists('dwp_sanitize_checkbox')) {
-  function dwp_sanitize_checkbox( $input ) { 
-    return ($input) ? '1' : '0';
-  }
-}
