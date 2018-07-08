@@ -6,7 +6,7 @@ if ( ! function_exists('dwp_add_admin_options')) {
       'Decapitation Settings', 
       __('Decapitation Settings', 'dwp'), 
       'administrator', 
-      'wordpress-decapitation-plugin-options', 
+      'wordpress-decapitation-plugin', 
       'dwp_show_admin_form'
     );
 

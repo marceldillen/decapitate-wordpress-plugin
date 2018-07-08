@@ -19,3 +19,11 @@ if ( ! function_exists('dwp_get_settings')) {
     );
   }
 }
+
+if ( ! function_exists('dwp_settings_link')) {
+  function dwp_settings_link( $links ) {
+    $settings_link = '<a href="options-general.php?page=wordpress-decapitation-plugin">' . __( 'Settings' ) . '</a>';
+    array_unshift( $links, $settings_link );
+    return $links;
+  }
+}

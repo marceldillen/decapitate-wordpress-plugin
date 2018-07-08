@@ -20,14 +20,24 @@ include_once plugin_dir_path(__FILE__).'functions/scripts.php';
 
 add_action ('after_setup_theme', 'dwp_setup');
 
-dwp_init();
 
-function dwp_init() {
-  if ( ! is_admin()) {
-    add_filter( 'wp', 'dwp_redirect_user', 0 );
-    return;
+if ( ! function_exists('dwp_get_plugin_basename')) {
+  function dwp_get_plugin_basename() {
+    return plugin_basename( __FILE__ );
   }
-  
-  add_action( 'admin_menu', 'dwp_add_admin_options' );
-  add_action( 'admin_init', 'dwp_register_settings' );
 }
+
+if ( ! function_exists('dwp_init')) {
+  function dwp_init() {
+    if ( ! is_admin()) {
+      add_filter( 'wp', 'dwp_redirect_user', 0 );
+      return;
+    }
+    
+    add_action( 'admin_menu', 'dwp_add_admin_options' );
+    add_action( 'admin_init', 'dwp_register_settings' );
+    add_filter( 'plugin_action_links_'.dwp_get_plugin_basename(), 'dwp_settings_link' );
+  }
+}
+
+dwp_init();
