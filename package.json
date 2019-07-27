@@ -6,9 +6,10 @@
   "repository": "https://github.com/marceldillen/wordpress-decapitation-plugin.git",
   "author": "Marcel Dillen <marceldillen@me.com>",
   "license": "MIT",
-  "dependencies": {
-    "gulp": "^3.9.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.2"
   }
 }

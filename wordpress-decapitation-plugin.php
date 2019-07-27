@@ -20,7 +20,6 @@ include_once plugin_dir_path(__FILE__).'functions/scripts.php';
 
 add_action ('after_setup_theme', 'dwp_setup');
 
-
 if ( ! function_exists('dwp_get_plugin_basename')) {
   function dwp_get_plugin_basename() {
     return plugin_basename( __FILE__ );
