@@ -1,1 +1,0 @@
-!function(c){c(function(){var e=c("#dwp_redirect_to_backend_input"),n=c("#dwp_redirect_url_row");e.on("change",function(){e.prop("checked")?n.hide():n.show()})})}(jQuery);
