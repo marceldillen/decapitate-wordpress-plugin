@@ -2,7 +2,7 @@
     "name": "marceldillen/decapitate-wordpress-plugin",
     "description": "Decapitate your Wordpress installation",
     "type": "wordpress-plugin",
-    "version:: "1.0.0",
+    "version: "1.0.0",
     "license": "MIT",
     "authors": [
         {
